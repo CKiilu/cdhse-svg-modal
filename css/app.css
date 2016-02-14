@@ -34,3 +34,17 @@
     visibility: visible;
     transition: opacity 0.3s 0s, visibility 0s 0s;
 }
+
+/*Content of modal window, before and after cover transition*/
+
+.cd-modal-content {
+    color: #f2f2f2;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s 0s, transform 0.3s 0s;
+}
+.modal-is-visible .cd-modal-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s 0.3s, transform 0.3s 0.3s;
+}
