@@ -11,6 +11,7 @@ h1 {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    z-index: 5;
 }
 .bot {
     position: relative;
@@ -19,4 +20,32 @@ h1 {
     position: absolute;
     top: 20%;
     left: 0;
+}
+
+/*Navigation*/
+
+
+/*Trigger*/
+
+.cd-nav-trigger {
+    transition: transform 0.5s;
+}
+.navigation-is-open .cd-nav-trigger {
+    /*    Rotate trigger when nav becomes visible*/
+    transform: rotate(180deg);
+}
+.cd-nav-trigger .cd-nav-icon::before,
+.cd-nav-trigger .cd-nav-icon::after {
+    /*    upper and lower lines of menu icon*/
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s, width 0.5s, top 0.3s;
+}
+.cd-nav-trigger .cd-nav-icon::before {
+    transform-origin: right top;
+    transform: translateY(-6px);
+}
+.cd-nav-trigger .cd-nav-icon::after {
+    transform-origin: right bottom;
+    transform: translateY(6px);
 }
