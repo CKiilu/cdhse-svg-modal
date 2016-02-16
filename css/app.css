@@ -1,1 +1,22 @@
+/*general styling*/
 
+h1 {
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+.bot,
+.top {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.bot {
+    position: relative;
+}
+.top {
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
