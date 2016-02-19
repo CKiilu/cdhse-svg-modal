@@ -79,8 +79,8 @@ h1 {
     transform: translateX(-100%);
     position: absolute;
 }
-.cd-navigation-wrapper-anim {
-    animation: move0 4s 1s cubic-bezier(.86, .01, .77, .78) forwards;
+.anim0 {
+    animation: move0 4s 1s forwards cubic-bezier(.86, .01, .77, .78);
 }
 @keyframes move0 {
     from {}
@@ -88,7 +88,16 @@ h1 {
         transform: translateX(0);
     }
 }
-.bot-anim {
+.anim50 {
+    animation: move50 4s 1s forwards cubic-bezier(.86, .01, .77, .78);
+}
+@keyframes move50 {
+    from {}
+    to {
+        transform: translateX(50vw);
+    }
+}
+.anim100 {
     animation: move100 4s 1s cubic-bezier(.86, .01, .77, .78) forwards;
 }
 @keyframes move100 {
