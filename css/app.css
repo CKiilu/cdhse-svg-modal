@@ -72,3 +72,28 @@ h1 {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 0.4s 0.3s;
 }
+
+/*Personal effort*/
+
+.cd-navigation-wrapper {
+    transform: translateX(-100%);
+    position: absolute;
+}
+.cd-navigation-wrapper-anim {
+    animation: move0 4s 1s cubic-bezier(.86, .01, .77, .78) forwards;
+}
+@keyframes move0 {
+    from {}
+    to {
+        transform: translateX(0);
+    }
+}
+.bot-anim {
+    animation: move100 4s 1s cubic-bezier(.86, .01, .77, .78) forwards;
+}
+@keyframes move100 {
+    from {}
+    to {
+        transform: translateX(100%);
+    }
+}
